@@ -1,0 +1,27 @@
+<section class="hero-unit">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Dipl.-Ing. Olaf Trommer</h1>
+      <hr>
+      <div class="row">
+        <div class="large-12 columns text-center">
+          <ul class="main-navigation">
+            <li class="navigation-item"><a href="#">Home</a></li>
+            <li class="navigation-item"><a href="#">3D Design</a></li>
+            <li class="navigation-item"><a href="#">Prototype-Entwicklung</a></li>
+            <li class="navigation-item"><a href="#"> Projektbegleitung</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-6 columns cta-box">
+      <div class="cta-box-bg">
+        {% capture hero_unit_text %}{% include texts/hero_unit.md %}{% endcapture %}
+        {{ hero_unit_text | markdownify }}
+        <a href="#" class="call-to-action secondary small button">Kontakt aufnehmen →</a>
+      </div>
+    </div>
+  </div>
+</section>

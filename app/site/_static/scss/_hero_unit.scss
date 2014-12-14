@@ -1,0 +1,60 @@
+
+.hero-unit {
+    background-color: rgba(223, 223, 223, 0.7);
+    background-image: url("/static/images/olaftrommer.png");
+    background-position: 75% 100%;
+    background-repeat: no-repeat;
+    background-size: 285px;
+    padding-bottom: 50px;
+
+    .main-navigation {
+        margin: 0 auto;
+        display: inline-block;
+
+        .navigation-item {
+            float: left;
+
+            a {
+                padding: 1em;
+                display: inline-block;
+                color: $primary_color;
+
+                &:hover {
+                    background-color: $primary_color_trans8;
+                    color: $white;
+                    border-radius: 5px;
+                    padding: 0.5em 1em;
+                    margin-top: 0.5em;
+                }
+            }
+        }
+    }
+
+    .cta-box {
+        color: $white;
+
+        .cta-box-bg {
+            background-color: $primary_color_trans9;
+            font-weight: 600;
+            padding: 35px;
+
+            p {
+                font-weight: 900;
+            }
+
+            .call-to-action {
+                background-color: transparent;
+                border: 2px $white solid;
+                border-radius: 5px;
+                color: $white;
+                margin: 0;
+                padding: 15px 50px 15px 50px;
+
+                &:hover {
+                    background-color: rgba(255,255,255,0.8);
+                    color: $primary_color_trans9;
+                }
+            }
+        }
+    }
+}

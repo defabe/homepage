@@ -1,0 +1,25 @@
+
+.content-block {
+    background-color: rgba(234, 234, 234, 0.95);
+    padding-bottom: 40px;
+    padding-top: 40px;
+
+    .content-block-box {
+        background-color: $white;
+        box-shadow: 2px 2px 10px $black_trans;
+
+        ul {
+            list-style: circle;
+            margin-left: 1em;
+            font-style: normal;
+            text-transform: none;
+            margin-bottom: 1em;
+        }
+    }
+
+    .references-box {
+        img {
+            box-shadow: 2px 2px 10px $black_trans;
+        }
+    }
+}

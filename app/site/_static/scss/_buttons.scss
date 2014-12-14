@@ -1,0 +1,47 @@
+
+.button {
+    background-color: transparent;
+    border-width: 0;
+    box-shadow: 0 0 0;
+    border: 2px $black solid;
+    border-radius: 5px;
+    webkit-appearance: none;
+    color: $black;
+    text-align: center;
+    font-size: 0.8125em;
+    margin: 0;
+    padding: 15px 50px 15px 50px;
+
+    &:hover {
+        background-color: transparent;
+        color: $white_trans;
+    }
+}
+
+.radius.right.button {
+    &:hover {
+        background-color: $black_trans;
+    }
+}
+
+@media only screen and (min-width: 64.063em) {
+    .button {
+        border: 2px $black solid;
+        border-radius: 5px;
+        color: $black;
+        font-size: 0.8125em;
+        margin-top: 25px;
+        padding: 15px 50px 15px 50px;
+    }
+}
+
+@media only screen and (min-width: 40.063em) {
+    .button {
+        color: $black;
+        font-size: 0.8125em;
+        border: 2px $black solid;
+        border-radius: 5px;
+        margin-top: 25px;
+        padding: 15px 50px 15px 50px;
+    }
+}

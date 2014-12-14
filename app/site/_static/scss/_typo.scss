@@ -1,0 +1,46 @@
+
+$headline_font: 'American Typewriter','Courier New',Courier,Monaco,mono;
+
+body {
+    font-family: serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $headline_font;
+    color: $primary_color;
+}
+
+h1 {
+    color: $primary_color;
+    font-size: 32px;
+    line-height: 28px;
+    text-align: center;
+}
+
+h2 {
+    color: $secondary_color;
+    font-size: 36px;
+    line-height: 34px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 10px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 22px;
+}
+
+hr {
+    border-color: $primary_color;
+    opacity: 0.5;
+    text-align: center;
+}

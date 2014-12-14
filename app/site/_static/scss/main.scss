@@ -1,0 +1,18 @@
+
+@import "_colors";
+@import "_typo";
+@import "_layout";
+@import "_buttons";
+@import "_hero_unit";
+@import "_content";
+@import "_footer";
+
+body {
+    background-image: url("/static/images/engineering_bg.jpg");
+    background-position: top left;
+    background-size: cover;
+}
+
+.section-spacer {
+    background-color: rgba(223, 223, 223, 0.7);
+}

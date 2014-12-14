@@ -1,0 +1,8 @@
+environment: production
+name: olaftrommer.de
+markdown: rdiscount
+permalink: pretty
+highlighter: pygments
+destination: pub
+source: site
+baseurl: //

@@ -1,0 +1,14 @@
+server {
+  listen   <%= @listen_port %> ;
+
+  server_name  <%= @server_name %>;
+
+  access_log  <%= @access_log %>;
+  index index.php index.html;
+
+  root <%= @docroot %>;
+
+  location \ {
+    try_files $uri $uri/;
+  }
+}
