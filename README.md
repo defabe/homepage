@@ -1,6 +1,8 @@
 Homepage for olaftrommer.de
 ================
 
+A preview of the current master can be found here: http://defabe.github.io/homepage
+
 ## Development
 
 You may either develop locally or you can use the provided vagrant setup.
