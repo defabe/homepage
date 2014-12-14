@@ -1,7 +1,5 @@
-E-Unit-Lean - Nutrition Plan
+Homepage for olaftrommer.de
 ================
-
-Small project that provides infos that help to eat healthy and lose weight.
 
 ## Development
 
