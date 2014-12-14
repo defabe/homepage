@@ -94,7 +94,7 @@ ul li ul li {
     padding: 15px 50px 15px 50px; } }
 .hero-unit {
   background-color: rgba(223, 223, 223, 0.7);
-  background-image: url("/static/images/olaftrommer.png");
+  background-image: url("../images/olaftrommer.png");
   background-position: 75% 100%;
   background-repeat: no-repeat;
   background-size: 285px;
@@ -179,7 +179,7 @@ ul li ul li {
       display: flex-box; }
 
 body {
-  background-image: url("/static/images/engineering_bg.jpg");
+  background-image: url("../images/engineering_bg.jpg");
   background-position: top left;
   background-size: cover; }
 
