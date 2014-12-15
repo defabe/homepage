@@ -1,8 +1,9 @@
 
 $headline_font: 'American Typewriter','Courier New',Courier,Monaco,mono;
+$text_font: serif;
 
 body {
-    font-family: serif;
+    font-family: $text_font;
     font-size: 18px;
 }
 

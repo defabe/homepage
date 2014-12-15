@@ -8,7 +8,7 @@ $(document).ready(function() {
   var timer = null;
   var transitioning = false;
 
-  $sticky_nav.html('<div class="sticky-content large-12 columns text-center">'+$nav_box.html()+'</div>');
+  $sticky_nav.find('.sticky-content').html($nav_box.html());
   $sticky_nav.on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
       sticky_nav_visible = ($sticky_nav.css('top') == '0px');
       transitioning = false;
