@@ -8,6 +8,7 @@ $(document).ready(function() {
     var timer = null;
     var transitioning = false;
     var content_offsets = [];
+    var nav_anchors = $nav.find('li a');
 
     $sticky_nav.find('.sticky-content').html($nav_box.html());
     $sticky_nav.on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
@@ -21,10 +22,22 @@ $(document).ready(function() {
     });
 
     $sticky_nav.find('li a').each(function(idx, anchor) {
-        var content_id = $(anchor).attr('href');
+        var $anchor = $(anchor);
+        var content_id = $anchor.attr('href');
         var $content_element = $(content_id);
         var content_offset = Math.floor($content_element.offset().top);
+
         content_offsets.push({ 'id': content_id, 'element': $content_element, 'offset': content_offset });
+        $anchor.click(function(event) {
+            event.preventDefault();
+            $body.animate({ scrollTop: content_offset }, 300);
+            return false;
+        });
+        $(nav_anchors[idx]).click(function(event) {
+            event.preventDefault();
+            $body.animate({ scrollTop: content_offset }, 300);
+            return false;
+        });
     });
 
     $doc.scroll(function(event) {
