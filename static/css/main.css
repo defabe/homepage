@@ -27,7 +27,7 @@ h4 {
   font-size: 28px; }
 
 h5 {
-  font-size: 22px; }
+  font-size: 19px; }
 
 hr {
   border-color: #23495f;
@@ -125,6 +125,8 @@ ul li ul li {
 .main-navigation {
   margin: 0 auto;
   display: inline-block; }
+  .main-navigation.inactive {
+    visibility: hidden; }
   .main-navigation .navigation-item {
     float: left; }
     .main-navigation .navigation-item a {
@@ -132,7 +134,7 @@ ul li ul li {
       display: inline-block;
       color: #23495f;
       font-weight: 600; }
-      .main-navigation .navigation-item a:hover {
+      .main-navigation .navigation-item a:hover, .main-navigation .navigation-item a.active {
         background-color: rgba(35, 73, 95, 0.8);
         color: #efefef;
         border-radius: 5px;
@@ -150,13 +152,16 @@ ul li ul li {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); }
   .sticky-nav.active {
     top: 0; }
+  .sticky-nav h5 {
+    position: absolute;
+    left: 1em; }
   .sticky-nav .sticky-content .main-navigation {
     margin: 0 auto;
     margin-bottom: -5px; }
     .sticky-nav .sticky-content .main-navigation .navigation-item a {
       padding: 0.5em 1em;
       color: #23495f; }
-      .sticky-nav .sticky-content .main-navigation .navigation-item a:hover {
+      .sticky-nav .sticky-content .main-navigation .navigation-item a:hover, .sticky-nav .sticky-content .main-navigation .navigation-item a.active {
         padding: 0.25em 1em;
         margin-top: 0.25em;
         color: #efefef; }
