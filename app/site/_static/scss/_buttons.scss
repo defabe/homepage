@@ -14,13 +14,13 @@
 
     &:hover {
         background-color: transparent;
-        color: $white_trans;
+        color: rgba($secondary_color, .7);
     }
 }
 
 .radius.right.button {
     &:hover {
-        background-color: $black_trans;
+        background-color: rgba($black, .1);
     }
 }
 

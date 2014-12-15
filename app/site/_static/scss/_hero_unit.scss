@@ -1,60 +1,94 @@
 
 .hero-unit {
-    background-color: rgba(223, 223, 223, 0.7);
+    background-color: rgba($secondary_color, .7);
     background-image: url("../images/olaftrommer.png");
     background-position: 75% 100%;
     background-repeat: no-repeat;
     background-size: 285px;
     padding-bottom: 50px;
 
-    .main-navigation {
-        margin: 0 auto;
-        display: inline-block;
-
-        .navigation-item {
-            float: left;
-
-            a {
-                padding: 1em;
-                display: inline-block;
-                color: $primary_color;
-
-                &:hover {
-                    background-color: $primary_color_trans8;
-                    color: $white;
-                    border-radius: 5px;
-                    padding: 0.5em 1em;
-                    margin-top: 0.5em;
-                }
-            }
-        }
-    }
-
     .cta-box {
-        color: $white;
+        color: $secondary_color;
 
         .cta-box-bg {
-            background-color: $primary_color_trans9;
+            background-color: rgba($primary_color, .9);
             font-weight: 600;
             padding: 35px;
 
             p {
                 font-weight: 900;
+                color: $secondary_color;
             }
 
             .call-to-action {
                 background-color: transparent;
-                border: 2px $white solid;
+                border: 2px $secondary_color solid;
                 border-radius: 5px;
-                color: $white;
+                color: $secondary_color;
                 margin: 0;
                 padding: 15px 50px 15px 50px;
 
                 &:hover {
-                    background-color: rgba(255,255,255,0.8);
-                    color: $primary_color_trans9;
+                    background-color: rgba($secondary_color, .8);
+                    color: rgba($primary_color, .9);
                 }
             }
         }
+    }
+}
+
+.main-navigation {
+    margin: 0 auto;
+    display: inline-block;
+
+    .navigation-item {
+        float: left;
+
+        a {
+            padding: 1em;
+            display: inline-block;
+            color: $primary_color;
+
+            &:hover {
+                background-color: rgba($primary_color, .8);
+                color: $secondary_color;
+                border-radius: 5px;
+                padding: 0.5em 1em;
+                margin-top: 0.5em;
+            }
+        }
+    }
+}
+
+.sticky-nav {
+    width: 100%;
+    position: fixed;
+    top: -100px;
+    z-index: 100;
+    background-color: rgba($primary_color, .9);
+    transition: top 0.3s linear;
+
+    &.active {
+      top: 0;
+    }
+
+    .sticky-content {
+
+      .main-navigation {
+          margin: 0 auto;
+
+          .navigation-item {
+
+              a {
+                  padding: 0.5em 1em;
+                  color: $white;
+
+                  &:hover {
+                      padding: 0.25em 1em;
+                      margin-top: 0.25em;
+                  }
+              }
+          }
+      }
     }
 }

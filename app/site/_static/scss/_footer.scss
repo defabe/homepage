@@ -1,26 +1,27 @@
 
 .footer-wrapper {
-    background-color: rgba(223, 223, 223, 0.7);
+    background-color: rgba($secondary_color, .7);
 
     .panel {
         background-color: rgba(234, 234, 234, 0.8);
         border: none;
-        box-shadow: 2px 2px 10px $black_trans;
+        box-shadow: 2px 2px 10px rgba($black, .1);
         margin: 40px 0 40px 0;
     }
 
     .radius.button.right {
-        border-color: $primary_color_trans9;
+        border-color: rgba($primary_color, .9);
+        background-color: $secondary_color;
         color: $primary_color;
 
         &:hover {
-            color: $white;
-            background-color: $primary_color_trans8;
+            color: $secondary_color;
+            background-color: rgba($primary_color, .8);
         }
     }
 
     footer {
-        background-color: $primary_color_trans9;
+        background-color: rgba($primary_color, .9);
 
         p, a {
             font-size: 14px;
@@ -30,14 +31,14 @@
             margin-bottom: 0;
 
             li a {
-                color: $white;
+                color: $secondary_color;
                 padding: 1em;
                 display: flex-box;
             }
         }
 
         .copyright {
-            color: #cdcdcd;
+            color: $secondary_color;
             margin-bottom: 0;
             padding: 1em;
             display: flex-box;
