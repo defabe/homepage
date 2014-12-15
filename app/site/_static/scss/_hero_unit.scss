@@ -41,6 +41,10 @@
     margin: 0 auto;
     display: inline-block;
 
+    &.inactive {
+      visibility: hidden;
+    }
+
     .navigation-item {
         float: left;
 
@@ -50,7 +54,8 @@
             color: $primary_color;
             font-weight: 600;
 
-            &:hover {
+            &:hover,
+            &.active {
                 background-color: rgba($primary_color, .8);
                 color: $secondary_color;
                 border-radius: 5px;
@@ -75,6 +80,11 @@
       top: 0;
     }
 
+    h5 {
+        position: absolute;
+        left: 1em;
+    }
+
     .sticky-content {
 
       .main-navigation {
@@ -87,7 +97,8 @@
                   padding: 0.5em 1em;
                   color: $primary_color;
 
-                  &:hover {
+                  &:hover,
+                  &.active {
                       padding: 0.25em 1em;
                       margin-top: 0.25em;
                       color: $secondary_color;
