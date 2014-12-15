@@ -48,6 +48,7 @@
             padding: 1em;
             display: inline-block;
             color: $primary_color;
+            font-weight: 600;
 
             &:hover {
                 background-color: rgba($primary_color, .8);
@@ -65,8 +66,10 @@
     position: fixed;
     top: -100px;
     z-index: 100;
-    background-color: rgba($primary_color, .9);
+    background-color: rgba($secondary_color, .9);
     transition: top 0.3s linear;
+    border-bottom: 1px solid rgba($primary_color, .6);
+    box-shadow: 2px 2px 10px rgba($black, .1);
 
     &.active {
       top: 0;
@@ -76,16 +79,18 @@
 
       .main-navigation {
           margin: 0 auto;
+          margin-bottom: -5px;
 
           .navigation-item {
 
               a {
                   padding: 0.5em 1em;
-                  color: $white;
+                  color: $primary_color;
 
                   &:hover {
                       padding: 0.25em 1em;
                       margin-top: 0.25em;
+                      color: $secondary_color;
                   }
               }
           }
