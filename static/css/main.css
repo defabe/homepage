@@ -34,6 +34,9 @@ hr {
   opacity: 0.5;
   text-align: center; }
 
+p, ul {
+  color: #23495f; }
+
 h1 {
   margin-bottom: 0px;
   margin-top: 16px; }
@@ -71,7 +74,7 @@ ul li ul li {
   padding: 15px 50px 15px 50px; }
   .button:hover {
     background-color: transparent;
-    color: rgba(255, 255, 255, 0.7); }
+    color: rgba(239, 239, 239, 0.7); }
 
 .radius.right.button:hover {
   background-color: rgba(0, 0, 0, 0.1); }
@@ -93,27 +96,12 @@ ul li ul li {
     margin-top: 25px;
     padding: 15px 50px 15px 50px; } }
 .hero-unit {
-  background-color: rgba(223, 223, 223, 0.7);
+  background-color: rgba(239, 239, 239, 0.7);
   background-image: url("../images/olaftrommer.png");
   background-position: 75% 100%;
   background-repeat: no-repeat;
   background-size: 285px;
   padding-bottom: 50px; }
-  .hero-unit .main-navigation {
-    margin: 0 auto;
-    display: inline-block; }
-    .hero-unit .main-navigation .navigation-item {
-      float: left; }
-      .hero-unit .main-navigation .navigation-item a {
-        padding: 1em;
-        display: inline-block;
-        color: #23495f; }
-        .hero-unit .main-navigation .navigation-item a:hover {
-          background-color: rgba(35, 73, 95, 0.8);
-          color: #efefef;
-          border-radius: 5px;
-          padding: 0.5em 1em;
-          margin-top: 0.5em; }
   .hero-unit .cta-box {
     color: #efefef; }
     .hero-unit .cta-box .cta-box-bg {
@@ -121,7 +109,8 @@ ul li ul li {
       font-weight: 600;
       padding: 35px; }
       .hero-unit .cta-box .cta-box-bg p {
-        font-weight: 900; }
+        font-weight: 900;
+        color: #efefef; }
       .hero-unit .cta-box .cta-box-bg .call-to-action {
         background-color: transparent;
         border: 2px #efefef solid;
@@ -130,8 +119,42 @@ ul li ul li {
         margin: 0;
         padding: 15px 50px 15px 50px; }
         .hero-unit .cta-box .cta-box-bg .call-to-action:hover {
-          background-color: rgba(255, 255, 255, 0.8);
+          background-color: rgba(239, 239, 239, 0.8);
           color: rgba(35, 73, 95, 0.9); }
+
+.main-navigation {
+  margin: 0 auto;
+  display: inline-block; }
+  .main-navigation .navigation-item {
+    float: left; }
+    .main-navigation .navigation-item a {
+      padding: 1em;
+      display: inline-block;
+      color: #23495f; }
+      .main-navigation .navigation-item a:hover {
+        background-color: rgba(35, 73, 95, 0.8);
+        color: #efefef;
+        border-radius: 5px;
+        padding: 0.5em 1em;
+        margin-top: 0.5em; }
+
+.sticky-nav {
+  width: 100%;
+  position: fixed;
+  top: -100px;
+  z-index: 100;
+  background-color: rgba(35, 73, 95, 0.9);
+  transition: top 0.3s linear; }
+  .sticky-nav.active {
+    top: 0; }
+  .sticky-nav .sticky-content .main-navigation {
+    margin: 0 auto; }
+    .sticky-nav .sticky-content .main-navigation .navigation-item a {
+      padding: 0.5em 1em;
+      color: #efefef; }
+      .sticky-nav .sticky-content .main-navigation .navigation-item a:hover {
+        padding: 0.25em 1em;
+        margin-top: 0.25em; }
 
 .content-block {
   background-color: rgba(234, 234, 234, 0.95);
@@ -150,7 +173,7 @@ ul li ul li {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); }
 
 .footer-wrapper {
-  background-color: rgba(223, 223, 223, 0.7); }
+  background-color: rgba(239, 239, 239, 0.7); }
   .footer-wrapper .panel {
     background-color: rgba(234, 234, 234, 0.8);
     border: none;
@@ -158,6 +181,7 @@ ul li ul li {
     margin: 40px 0 40px 0; }
   .footer-wrapper .radius.button.right {
     border-color: rgba(35, 73, 95, 0.9);
+    background-color: #efefef;
     color: #23495f; }
     .footer-wrapper .radius.button.right:hover {
       color: #efefef;
@@ -173,7 +197,7 @@ ul li ul li {
         padding: 1em;
         display: flex-box; }
     .footer-wrapper footer .copyright {
-      color: #cdcdcd;
+      color: #efefef;
       margin-bottom: 0;
       padding: 1em;
       display: flex-box; }
@@ -184,4 +208,4 @@ body {
   background-size: cover; }
 
 .section-spacer {
-  background-color: rgba(223, 223, 223, 0.7); }
+  background-color: rgba(239, 239, 239, 0.7); }
